@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Your description goes here" />
+    <meta name="keywords" content="one, two, three" />
+
+    <title>Blank Template</title>
+
+    <script
+      src="https://kit.fontawesome.com/c59bf71257.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- external CSS link -->
+    <link rel="icon" type="image/x-icon" href="images/logo.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Estrela</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- HERO -->
+        <section id="hero" class="container mb-5">
+          <div class="row">
+            <div class="col">
+              <img
+                src="images/profile.png"
+                class="img-thumbnail float-start"
+                alt="Photo of Estrela Espirdião"
+              />
+            </div>
+            <div class="col">
+              <h1>Hi, I'm Estrela Espiridião</h1>
+              <p id="pitch">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita fugit ipsa reiciendis recusandae id vitae quis?
+              </p>
+              <button>Get to know me</button>
+            </div>
+          </div>
+        </section>
+      </header>
+      <!-- PORTFOLIO -->
+      <section id="portfolio" class="container">
+        <h2 class="mb-3">Projects</h2>
+        <div class="row">
+          <div class="col-6 mb-3">
+            <div class="project-container">
+              <img src="#" alt="Project Image" />
+              <h3>Project X</h3>
+            </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="project-container">
+              <img src="#" alt="Project Image" />
+              <h3>Project X</h3>
+            </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="project-container">
+              <img src="#" alt="Project Image" />
+              <h3>Project X</h3>
+            </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="project-container">
+              <img src="#" alt="Project Image" />
+              <h3>Project X</h3>
+            </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="project-container">
+              <img src="#" alt="Project Image" />
+              <h3>Project X</h3>
+            </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="project-container">
+              <img src="#" alt="Project Image" />
+              <h3>Project X</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="container">
+        <h2>About me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+          voluptatum consequatur dolorem deleniti mollitia est temporibus
+          delectus harum, magnam illo illum adipisci recusandae exercitationem?
+          Iste voluptatum excepturi rerum quidem provident.
+        </p>
+        <a href="#">My projects</a>
+        <a href="#">Reach out!</a>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h2>Get in touch</h2>
+        <p>
+          Need a website? Need a developer for your team? Want to connect? I'm
+          happy to chat!
+        </p>
+        <div class="contacts">
+          <div class="info">
+            <p>Location: Lisbon, Portugal</p>
+          </div>
+          <div class="info">
+            <p>
+              Email:
+              <a href="mailto:estrelaespiridao@gmail.com"
+                >estrelaespiridiao@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="info">
+            <p><i class="fab fa-twitter"></i> Twitter</p>
+          </div>
+          <div class="info">
+            <p><i class="fab fa-linkedin"></i>Linkedin</p>
+          </div>
+        </div>
+        <form action="">
+          <form
+            class="contact-form"
+            action="#"
+            method="POST"
+            data-netlify="true"
+          >
+            <h3 class="title">Contact Me</h3>
+            <div class="row">
+              <input type="hidden" name="_subject" value="New Message!" />
+              <input type="hidden" name="_captcha" value="false" />
+              <!-- <input type="hidden" name="_next" value="https://juliafmorgado.com/thank-you.html" target="_blank"> -->
+              <input
+                type="text"
+                name="first name"
+                class="contact-input"
+                placeholder="First Name"
+                required
+              />
+              <input
+                type="text"
+                name="last name"
+                class="contact-input"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div class="row">
+              <input
+                type="text"
+                name="phone"
+                class="contact-input"
+                placeholder="Phone"
+              />
+              <input
+                type="email"
+                name="email"
+                class="contact-input"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="row">
+              <textarea
+                name="message"
+                class="contact-input textarea"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn contact-button"
+              value="Send message"
+            >
+              Send
+            </button>
+          </form>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          estrelaespiridiao
+        </p>
+      </div>
+      <div class="socials">
+        <a href="https://twitter.com/estrela_palma" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/estrela-palma/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/EstrelaE" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
