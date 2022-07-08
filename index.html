@@ -26,13 +26,16 @@
     <main class="">
       <header>
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav
+          class="navbar navbar-expand-lg fixed-top"
+          style="background-color: #5b1569"
+        >
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Estrela</a>
+            <a class="navbar-brand" style="color: #ffffff" href="#">Estrela</a>
             <button
               class="navbar-toggler"
               type="button"
-              data-bs="collapse"
+              data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
               aria-controls="navbarNav"
               aria-expanded="false"
@@ -43,43 +46,53 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
+                  <a
+                    style="color: #ffffff"
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#portfolio"
+                    >Projects</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
+                  <a style="color: #ffffff" class="nav-link" href="#about"
+                    >About me</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">Contacts</a>
+                  <a style="color: #ffffff" class="nav-link" href="#contact"
+                    >Contacts</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-
         <!-- HERO -->
-        <section id="hero" class="container mb-5 d-flex justify-content-evenly">
-          <div class="row">
-            <div class="col">
+        <section id="hero" class="container mb-5">
+          <div class="row d-flex align-items-center">
+            <div class="col d-flex justify-content-center">
               <img
                 src="images/profile.png"
-                class="img-thumbnail float-start"
+                class="img-thumbnail w-75 float-start"
                 alt="Photo of Estrela Espirdião"
               />
             </div>
             <div class="col">
-              <h1>Hi, I'm Estrela Espiridião</h1>
-              <p id="pitch">
+              <h1 class="d-flex justify-content-start">
+                Hi, I'm Estrela Espiridião
+              </h1>
+              <p id="pitch" class="d-flex justify-content-start mb-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Expedita fugit ipsa reiciendis recusandae id vitae quis?
               </p>
-              <button type="button" class="btn btn-primary">
+              <a
+                href="#about"
+                type="button"
+                class="btn btn-light d-flex justify-content-start"
+              >
                 Get to know me
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -88,68 +101,97 @@
       <!-- PORTFOLIO -->
       <section id="portfolio" class="container mb-5">
         <h2 class="mb-3">Projects</h2>
-        <div class="d-flex justify-content-center">
-          <div class="row">
-            <div class="col-6 mb-3">
-              <div class="project-container">
-                <img src="#" alt="Project Image" />
-                <h3>Project X</h3>
-              </div>
+
+        <div class="row">
+          <div class="col-6 mb-3">
+            <div class="project-container">
+              <img
+                src="images/pic1.png"
+                class="image-fluid w-75"
+                alt="Project Image"
+              />
+              <h3>Project X</h3>
             </div>
-            <div class="col-6 mb-3">
-              <div class="project-container">
-                <img src="#" alt="Project Image" />
-                <h3>Project X</h3>
-              </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="project-container">
+              <img
+                src="images/pic1.png"
+                class="image-fluid w-75"
+                alt="Project Image"
+              />
+              <h3>Project X</h3>
             </div>
-            <div class="col-6 mb-3">
-              <div class="project-container">
-                <img src="#" alt="Project Image" />
-                <h3>Project X</h3>
-              </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="project-container">
+              <img
+                src="images/pic1.png"
+                class="image-fluid w-75"
+                alt="Project Image"
+              />
+              <h3>Project X</h3>
             </div>
-            <div class="col-6 mb-3">
-              <div class="project-container">
-                <img src="#" alt="Project Image" />
-                <h3>Project X</h3>
-              </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="project-container">
+              <img
+                src="images/pic1.png"
+                class="image-fluid w-75"
+                alt="Project Image"
+              />
+              <h3>Project X</h3>
             </div>
-            <div class="col-6 mb-3">
-              <div class="project-container">
-                <img src="#" alt="Project Image" />
-                <h3>Project X</h3>
-              </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="project-container">
+              <img
+                src="images/pic1.png"
+                class="image-fluid w-75"
+                alt="Project Image"
+              />
+              <h3>Project X</h3>
             </div>
-            <div class="col-6 mb-3">
-              <div class="project-container">
-                <img src="#" alt="Project Image" />
-                <h3>Project X</h3>
-              </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="project-container">
+              <img
+                src="images/pic1.png"
+                class="image-fluid w-75"
+                alt="Project Image"
+              />
+              <h3>Project X</h3>
             </div>
           </div>
         </div>
       </section>
-      <section id="about" class="container mb-5">
-        <h2>About me</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-          voluptatum consequatur dolorem deleniti mollitia est temporibus
-          delectus harum, magnam illo illum adipisci recusandae exercitationem?
-          Iste voluptatum excepturi rerum quidem provident.
-        </p>
-        <a href="#" type="button" class="btn btn-primary">My projects</a>
-        <a href="#" type="button" class="btn btn-primary">Reach out!</a>
-      </section>
+      <div class="about">
+        <section id="about" class="container">
+          <h2 class="d-flex justify-content-center">About me</h2>
+          <p class="d-flex justify-content-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            voluptatum consequatur dolorem deleniti mollitia est temporibus
+            delectus harum, magnam illo illum adipisci recusandae
+            exercitationem? Iste voluptatum excepturi rerum quidem provident.
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="#" type="button" class="btn btn-primary me-2"
+              >My projects</a
+            >
+            <a href="#" type="button" class="btn btn-primary">Reach out!</a>
+          </div>
+        </section>
+      </div>
 
       <!-- CONTACT -->
-      <section id="contact" class="container mb-5">
-        <h2>Get in touch</h2>
-        <div class="row">
+      <section id="contact" class="container mt-5 mb-5">
+        <h2 class="d-flex justify-content-center mb-2">Get in touch</h2>
+        <p class="d-flex justify-content-center mb-3">
+          Need a website? Need a developer for your team? Want to connect? I'm
+          happy to chat!
+        </p>
+        <div class="row d-flex justify-content-center align-items-center mt-5">
           <div class="contacts col">
-            <p>
-              Need a website? Need a developer for your team? Want to connect?
-              I'm happy to chat!
-            </p>
             <div class="info">
               <p>Location: Lisbon, Portugal</p>
             </div>
@@ -168,6 +210,7 @@
               <p><i class="fab fa-linkedin"></i>Linkedin</p>
             </div>
           </div>
+
           <div class="col">
             <form action="">
               <form
@@ -178,28 +221,54 @@
               >
                 <h3 class="title">Contact Me</h3>
                 <div class="row">
-                  <div class=" mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Name</label>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Your name">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-default"
+                      placeholder="Your name"
+                    />
                   </div>
                   <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="name@example.com"
+                    />
                   </div>
                   <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
                   </div>
                   <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+                    <button class="btn btn-primary" type="submit">
+                      Submit form
+                    </button>
                   </div>
+                </div>
+              </form>
+            </form>
           </div>
         </div>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer class="container d-flex justify-content-center">
+    <footer class="container d-flex justify-content-center mb-4">
       <div class="row">
         <div class="col-12 d-flex justify-content-center">
           <p class="">

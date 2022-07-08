@@ -1,20 +1,20 @@
 /* Box Model Hack */
 * {
-     -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,19 +22,66 @@
 /*******************************************/
 
 body {
-
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
+  background-color: #5b1569;
+  color: white;
+}
 
+nav {
+  background-color: #5b1569;
+}
+nav a {
+}
+
+#hero {
+  padding: 2em 0 10em;
+}
+
+#hero img {
+  margin-top: 5em;
+}
+
+header section#hero {
+  /* border: 4px solid greenyellow; */
+  text-align: left;
+  padding-right: 2em;
+}
+header section#hero h1 {
+  font-size: 3em;
+}
+
+header section#hero p {
+  font-size: 1.5em;
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
+  font-weight: 300;
 }
 
 footer {
+}
 
+section {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  /* border: 3px solid red; */
+  padding: 10px;
+}
+
+.project-container img {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid red;
+}
+
+div.about {
+  background-color: #f4aa3a;
+  padding: 2em 0;
 }
 
 /******************************************
