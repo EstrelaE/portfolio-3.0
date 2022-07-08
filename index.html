@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main>
+    <main class="">
       <header>
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg bg-light">
@@ -60,8 +60,9 @@
             </div>
           </div>
         </nav>
+
         <!-- HERO -->
-        <section id="hero" class="container mb-5">
+        <section id="hero" class="container mb-5 d-flex justify-content-evenly">
           <div class="row">
             <div class="col">
               <img
@@ -76,54 +77,59 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Expedita fugit ipsa reiciendis recusandae id vitae quis?
               </p>
-              <button>Get to know me</button>
+              <button type="button" class="btn btn-primary">
+                Get to know me
+              </button>
             </div>
           </div>
         </section>
       </header>
+
       <!-- PORTFOLIO -->
-      <section id="portfolio" class="container">
+      <section id="portfolio" class="container mb-5">
         <h2 class="mb-3">Projects</h2>
-        <div class="row">
-          <div class="col-6 mb-3">
-            <div class="project-container">
-              <img src="#" alt="Project Image" />
-              <h3>Project X</h3>
+        <div class="d-flex justify-content-center">
+          <div class="row">
+            <div class="col-6 mb-3">
+              <div class="project-container">
+                <img src="#" alt="Project Image" />
+                <h3>Project X</h3>
+              </div>
             </div>
-          </div>
-          <div class="col-6 mb-3">
-            <div class="project-container">
-              <img src="#" alt="Project Image" />
-              <h3>Project X</h3>
+            <div class="col-6 mb-3">
+              <div class="project-container">
+                <img src="#" alt="Project Image" />
+                <h3>Project X</h3>
+              </div>
             </div>
-          </div>
-          <div class="col-6 mb-3">
-            <div class="project-container">
-              <img src="#" alt="Project Image" />
-              <h3>Project X</h3>
+            <div class="col-6 mb-3">
+              <div class="project-container">
+                <img src="#" alt="Project Image" />
+                <h3>Project X</h3>
+              </div>
             </div>
-          </div>
-          <div class="col-6 mb-3">
-            <div class="project-container">
-              <img src="#" alt="Project Image" />
-              <h3>Project X</h3>
+            <div class="col-6 mb-3">
+              <div class="project-container">
+                <img src="#" alt="Project Image" />
+                <h3>Project X</h3>
+              </div>
             </div>
-          </div>
-          <div class="col-6 mb-3">
-            <div class="project-container">
-              <img src="#" alt="Project Image" />
-              <h3>Project X</h3>
+            <div class="col-6 mb-3">
+              <div class="project-container">
+                <img src="#" alt="Project Image" />
+                <h3>Project X</h3>
+              </div>
             </div>
-          </div>
-          <div class="col-6 mb-3">
-            <div class="project-container">
-              <img src="#" alt="Project Image" />
-              <h3>Project X</h3>
+            <div class="col-6 mb-3">
+              <div class="project-container">
+                <img src="#" alt="Project Image" />
+                <h3>Project X</h3>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="about" class="container">
+      <section id="about" class="container mb-5">
         <h2>About me</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
@@ -131,119 +137,98 @@
           delectus harum, magnam illo illum adipisci recusandae exercitationem?
           Iste voluptatum excepturi rerum quidem provident.
         </p>
-        <a href="#">My projects</a>
-        <a href="#">Reach out!</a>
+        <a href="#" type="button" class="btn btn-primary">My projects</a>
+        <a href="#" type="button" class="btn btn-primary">Reach out!</a>
       </section>
 
       <!-- CONTACT -->
-      <section id="contact">
+      <section id="contact" class="container mb-5">
         <h2>Get in touch</h2>
-        <p>
-          Need a website? Need a developer for your team? Want to connect? I'm
-          happy to chat!
-        </p>
-        <div class="contacts">
-          <div class="info">
-            <p>Location: Lisbon, Portugal</p>
-          </div>
-          <div class="info">
+        <div class="row">
+          <div class="contacts col">
             <p>
-              Email:
-              <a href="mailto:estrelaespiridao@gmail.com"
-                >estrelaespiridiao@gmail.com</a
-              >
+              Need a website? Need a developer for your team? Want to connect?
+              I'm happy to chat!
             </p>
+            <div class="info">
+              <p>Location: Lisbon, Portugal</p>
+            </div>
+            <div class="info">
+              <p>
+                Email:
+                <a href="mailto:estrelaespiridao@gmail.com"
+                  >estrelaespiridiao@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="info">
+              <p><i class="fab fa-twitter"></i> Twitter</p>
+            </div>
+            <div class="info">
+              <p><i class="fab fa-linkedin"></i>Linkedin</p>
+            </div>
           </div>
-          <div class="info">
-            <p><i class="fab fa-twitter"></i> Twitter</p>
-          </div>
-          <div class="info">
-            <p><i class="fab fa-linkedin"></i>Linkedin</p>
+          <div class="col">
+            <form action="">
+              <form
+                class="contact-form"
+                action="#"
+                method="POST"
+                data-netlify="true"
+              >
+                <h3 class="title">Contact Me</h3>
+                <div class="row">
+                  <div class=" mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Your name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                  </div>
           </div>
         </div>
-        <form action="">
-          <form
-            class="contact-form"
-            action="#"
-            method="POST"
-            data-netlify="true"
-          >
-            <h3 class="title">Contact Me</h3>
-            <div class="row">
-              <input type="hidden" name="_subject" value="New Message!" />
-              <input type="hidden" name="_captcha" value="false" />
-              <!-- <input type="hidden" name="_next" value="https://juliafmorgado.com/thank-you.html" target="_blank"> -->
-              <input
-                type="text"
-                name="first name"
-                class="contact-input"
-                placeholder="First Name"
-                required
-              />
-              <input
-                type="text"
-                name="last name"
-                class="contact-input"
-                placeholder="Last Name"
-                required
-              />
-            </div>
-            <div class="row">
-              <input
-                type="text"
-                name="phone"
-                class="contact-input"
-                placeholder="Phone"
-              />
-              <input
-                type="email"
-                name="email"
-                class="contact-input"
-                placeholder="Email"
-                required
-              />
-            </div>
-            <div class="row">
-              <textarea
-                name="message"
-                class="contact-input textarea"
-                placeholder="Message"
-                required
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="btn contact-button"
-              value="Send message"
-            >
-              Send
-            </button>
-          </form>
-        </form>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer>
-      <div>
-        <p>
-          Copyright ©
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          estrelaespiridiao
-        </p>
-      </div>
-      <div class="socials">
-        <a href="https://twitter.com/estrela_palma" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/estrela-palma/" target="_blank">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/EstrelaE" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
+    <footer class="container d-flex justify-content-center">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <p class="">
+            Copyright ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            estrelaespiridiao
+          </p>
+        </div>
+        <div class="socials d-flex justify-content-center">
+          <a
+            href="https://twitter.com/estrela_palma"
+            class="me-2"
+            target="_blank"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/estrela-palma/"
+            class="me-2"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/EstrelaE" class="me-2" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
     </footer>
 
