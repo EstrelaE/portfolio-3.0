@@ -31,7 +31,7 @@
           style="background-color: #5b1569"
         >
           <div class="container-fluid">
-            <a class="navbar-brand" style="color: #ffffff" href="#">Estrela</a>
+            <a class="navbar-brand" style="color: #ffffff" href="#"> Estrela</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -70,29 +70,33 @@
         </nav>
         <!-- HERO -->
         <section id="hero" class="container mb-5">
-          <div class="row d-flex align-items-center">
+          <div class="mt-5 row d-flex align-items-center">
             <div class="col d-flex justify-content-center">
               <img
-                src="images/profile.png"
+                src="images/me.png"
                 class="img-thumbnail w-75 float-start"
                 alt="Photo of Estrela Espirdião"
               />
             </div>
             <div class="col">
               <h1 class="d-flex justify-content-start">
-                Hi, I'm Estrela Espiridião
+                Hi! 💫 I'm Estrela Espiridião
               </h1>
               <p id="pitch" class="d-flex justify-content-start mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita fugit ipsa reiciendis recusandae id vitae quis?
+                A Software Engineer with a passion for solving real life
+                problems, and making life easier for real people.
+                <br />
+                <br />
+                Researching, discussing and coding, to then create the most
+                accessible, useful and meaningful product possible!
               </p>
-              <a
-                href="#about"
+              <button
+                onclick="location.href='#about'"
                 type="button"
                 class="btn btn-light d-flex justify-content-start"
               >
-                Get to know me
-              </a>
+                More about me
+              </button>
             </div>
           </div>
         </section>
@@ -100,13 +104,13 @@
 
       <!-- PORTFOLIO -->
       <section id="portfolio" class="container mb-5">
-        <h2 class="mb-3">Projects</h2>
+        <h2 class="mt-5 mb-5">Projects 💫</h2>
 
         <div class="row">
           <div class="col-6 mb-3">
             <div class="project-container">
               <img
-                src="images/pic1.png"
+                src="images/weather-app.png"
                 class="image-fluid w-75"
                 alt="Project Image"
               />
@@ -167,30 +171,40 @@
       </section>
       <div class="about">
         <section id="about" class="container">
-          <h2 class="d-flex justify-content-center">About me</h2>
-          <p class="d-flex justify-content-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-            voluptatum consequatur dolorem deleniti mollitia est temporibus
-            delectus harum, magnam illo illum adipisci recusandae
-            exercitationem? Iste voluptatum excepturi rerum quidem provident.
+          <h2 class="mb-4">About me</h2>
+          <p>
+            As a culture-worker turned Software Engineer, I am motivated by the
+            possibility of creating products that can change and facilitate
+            life. I work with groups of people who are usually alienated from
+            tech (ie: elders), so accessibility and digital literacy are very
+            important to me. As someone with experience with acting and artistic
+            production, I thrive in teamwork and creative processes. But I also
+            know that strategy, owenership and growth, are key to a successful
+            project.
+          </p>
+          <h3 class="mt-5">Skills</h3>
+          <p id="skills">
+            <i class="me-4 fa-brands fa-html5" title="HTML5"></i
+            ><i class="me-3 fa-brands fa-css3-alt" title="CSS3"></i>
+            <i class="me-3 fa-brands fa-js-square" title="JavaScript"></i>
+            <i class="me-3 fa-brands fa-bootstrap" title="Bootstrap"></i>
+            <i class="fa-brands fa-git-square" title="Git(hub)"></i>
           </p>
           <div class="d-flex justify-content-center">
-            <a href="#" type="button" class="btn btn-primary me-2"
-              >My projects</a
-            >
-            <a href="#" type="button" class="btn btn-primary">Reach out!</a>
+            <a href="#" type="button" class="btn btn-light me-2">My projects</a>
+            <a href="#" type="button" class="btn btn-light">Reach out!</a>
           </div>
         </section>
       </div>
 
       <!-- CONTACT -->
       <section id="contact" class="container mt-5 mb-5">
-        <h2 class="d-flex justify-content-center mb-2">Get in touch</h2>
+        <h2 class="d-flex justify-content-center mb-2">Get in touch 💫</h2>
         <p class="d-flex justify-content-center mb-3">
           Need a website? Need a developer for your team? Want to connect? I'm
           happy to chat!
         </p>
-        <div class="row d-flex justify-content-center align-items-center mt-5">
+        <div class="row d-flex align-items-center mt-5">
           <div class="contacts col">
             <div class="info">
               <p>Location: Lisbon, Portugal</p>
@@ -221,8 +235,10 @@
               >
                 <h3 class="title">Contact Me</h3>
                 <div class="row">
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label"
+                  <div class="mb-4">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label d-flex justify-content-start"
                       >Name</label
                     >
                     <input
@@ -233,8 +249,10 @@
                       placeholder="Your name"
                     />
                   </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label"
+                  <div class="mb-4">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label d-flex justify-content-start"
                       >Email address</label
                     >
                     <input
@@ -245,7 +263,9 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"
+                    <label
+                      for="exampleFormControlTextarea1"
+                      class="form-label d-flex justify-content-start"
                       >Message</label
                     >
                     <textarea
