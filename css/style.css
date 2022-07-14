@@ -42,6 +42,12 @@ p {
   font-weight: 300;
 }
 
+video {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
 footer p {
   margin-top: 70px;
   font-size: 1em;
