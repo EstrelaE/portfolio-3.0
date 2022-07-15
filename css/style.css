@@ -42,6 +42,11 @@ p {
   font-weight: 300;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 video {
   display: block;
   width: 100%;
@@ -56,6 +61,7 @@ footer p {
 #contact .form-label {
   font-size: 1.2em;
 }
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -96,7 +102,6 @@ header section#hero h1 {
 .project-container img {
   display: block;
   margin: 0 auto;
-  border: 3px solid red;
 }
 
 div.about {
@@ -113,4 +118,13 @@ div.about {
 
 #contact p {
   text-align: start;
+}
+
+.clickme {
+  font-size: 3em;
+  color: #5b1569;
+}
+
+.clickme:hover {
+  color: grey;
 }
