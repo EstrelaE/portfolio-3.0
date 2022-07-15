@@ -32,7 +32,8 @@ h2 {
   font-size: 2.5em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(66, 66, 66, 0.987);
+  color: black;
+  text-shadow: 2px 1px 2px #5b1569;
 }
 
 p {
@@ -43,6 +44,11 @@ p {
 }
 
 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
   text-decoration: none;
   color: inherit;
 }
@@ -60,6 +66,17 @@ footer p {
 
 #contact .form-label {
   font-size: 1.2em;
+}
+
+section .btn {
+  font-size: 1.3em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border: none;
+}
+
+section .btn:hover {
+  background-color: lightgrey;
+  border: none;
 }
 
 /******************************************
@@ -104,6 +121,11 @@ header section#hero h1 {
   margin: 0 auto;
 }
 
+.project-container img:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.3s ease-in-out;
+}
+
 div.about {
   background-color: #f4aa3a;
   padding: 2em 0;
@@ -116,12 +138,24 @@ div.about {
   font-size: 50px;
 }
 
+#about .socials {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+#about .socials i {
+  font-size: 2em;
+}
+
 #contact p {
   text-align: start;
 }
 
-.clickme {
+#portfolio .clickme {
   font-size: 3em;
+}
+
+.clickme {
   color: #5b1569;
 }
 
