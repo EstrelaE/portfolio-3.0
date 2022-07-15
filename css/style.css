@@ -162,3 +162,30 @@ div.about {
 .clickme:hover {
   color: grey;
 }
+
+@media only screen and (max-width: 1400px) {
+  [class*="col-"] {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.9em;
+  }
+  p {
+    font-size: 1.3em;
+  }
+
+  section .btn {
+    font-size: 1em;
+  }
+
+  #hero img {
+    width: 60%;
+  }
+}
